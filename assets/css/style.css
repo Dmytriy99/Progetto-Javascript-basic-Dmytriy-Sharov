@@ -1,0 +1,67 @@
+body {
+  background: url(/assets/img/background.jpg);
+  background-size: cover;
+  background-position: fixed;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+}
+
+.counter-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-box {
+  display: flex;
+  width: 40%;
+  height: 40px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-family: "japan2";
+  font-size: 70px;
+}
+button {
+  font-family: "japan2";
+  width: 30%;
+  height: 50px;
+  font-size: 45px;
+  align-items: center;
+}
+
+p {
+  font-size: 25px;
+  font-family: "japan";
+}
+
+.reset {
+  width: 20%;
+  align-items: center;
+}
+
+.reset-box {
+  margin-top: 30px;
+}
+
+@font-face {
+  font-family: "japan";
+  src: url("/assets/fonts/GbshintoRegular-VMGx.otf");
+}
+@font-face {
+  font-family: "japan2";
+  src: url("/assets/fonts/Kashima\ Demo.otf");
+}
