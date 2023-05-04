@@ -75,4 +75,7 @@ p {
   .reset {
     width: 60px;
   }
+  h1 {
+    font-size: 45px;
+  }
 }
