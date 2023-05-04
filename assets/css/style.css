@@ -65,9 +65,9 @@ p {
   src: url("/assets/fonts/Kashima\ Demo.otf");
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
   button {
-    width: 130px;
+    width: 180px;
     height: 50px;
     margin-left: 8px;
     margin-right: 8px;
