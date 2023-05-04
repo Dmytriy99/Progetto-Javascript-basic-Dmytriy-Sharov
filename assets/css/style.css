@@ -3,10 +3,10 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
-  display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
@@ -76,8 +76,5 @@ p {
   }
   h1 {
     font-size: 45px;
-  }
-  .container {
-    height: 100%;
   }
 }
