@@ -1,36 +1,32 @@
 const btnBox = document.querySelector(".btn-Box");
-
+const contBox = document.querySelector(".container");
 const resetBox = document.querySelector(".reset-box");
-const resetBtn = document.createElement("button");
 
-const increseBtn = document.createElement("button");
-let valueP = document.createElement("p");
-const decreseBtn = document.createElement("button");
+function creationHandler(tag, style, content) {
+  button = document.createElement(tag);
+  button.className = style;
+  button.innerHTML = content;
+  return button;
+}
 
+const increseBtn = creationHandler("button", "", "+");
+const decreseBtn = creationHandler("button", "", "-");
+const resetBtn = creationHandler("button", "", "RESET");
+const textP = creationHandler("p", "", "0");
 resetBox.append(resetBtn);
-resetBtn.innerHTML = "RESET";
 
-btnBox.append(decreseBtn, valueP, increseBtn);
-increseBtn.innerHTML = "+";
-decreseBtn.innerHTML = "-";
-valueP.innerHTML = 0;
+btnBox.append(decreseBtn, textP, increseBtn);
 
-let score = Number(valueP.textContent);
+let counter = 0;
+function target(e) {
+  if (e.target === increseBtn) {
+    counter++;
+  } else if (e.target === decreseBtn) {
+    counter--;
+  } else {
+    counter = 0;
+  }
+  textP.innerHTML = counter;
+}
 
-const less = decreseBtn.addEventListener("click", function () {
-  score.textContent = 0;
-  const calc = (score = score - 1);
-  valueP.textContent = calc;
-});
-
-const plus = increseBtn.addEventListener("click", function () {
-  score.textContent = 0;
-  const calc = (score = score + 1);
-  valueP.textContent = calc;
-});
-
-const reset = function () {
-  score = 0;
-  valueP.textContent = 0;
-};
-resetBtn.addEventListener("click", reset);
+contBox.addEventListener("click", target);
