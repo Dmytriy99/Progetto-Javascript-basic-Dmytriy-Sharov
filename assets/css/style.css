@@ -64,3 +64,15 @@ p {
   font-family: "japan2";
   src: url("/assets/fonts/Kashima\ Demo.otf");
 }
+
+@media screen and (max-width: 460px) {
+  button {
+    width: 130px;
+    height: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .reset {
+    width: 60px;
+  }
+}
