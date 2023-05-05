@@ -22,8 +22,8 @@ body {
 
 .btn-box {
   display: flex;
-  width: 40%;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -50,6 +50,7 @@ p {
   width: 160px;
   margin-top: 50px;
   text-align: center;
+  align-items: center;
 }
 
 @font-face {
