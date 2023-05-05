@@ -49,6 +49,7 @@ p {
 .reset {
   width: 20%;
   align-items: center;
+  text-align: center;
 }
 
 .reset-box {
@@ -63,7 +64,7 @@ p {
   font-family: "japan2";
   src: url("/assets/fonts/Kashima\ Demo.otf");
 }
-
+/* mediaquery*/
 @media screen and (max-width: 600px) {
   button {
     width: 180px;
@@ -73,6 +74,7 @@ p {
   }
   .reset {
     width: 60px;
+    text-align: center;
   }
   h1 {
     font-size: 45px;
