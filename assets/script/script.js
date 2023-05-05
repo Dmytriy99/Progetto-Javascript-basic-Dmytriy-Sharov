@@ -11,7 +11,7 @@ function creationHandler(tag, style, content) {
 // lo style è vuoto perchè utilizzo già nel css sono il tag "button"
 const increseBtn = creationHandler("button", "", "+");
 const decreseBtn = creationHandler("button", "", "-");
-const resetBtn = creationHandler("button", "", "RESET");
+const resetBtn = creationHandler("button", "btn-reset", "RESET");
 const textP = creationHandler("p", "", "0");
 resetBox.append(resetBtn);
 
